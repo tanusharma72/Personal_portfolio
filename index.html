@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/b4384b8512.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        function SendMail(){
+    (function(){
+          emailjs.init({
+          publicKey: "bbzj00M_7Y4x6icvZ",
+      });
+    })();
+}
+</script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#project">Project</a>
+                    </li>
+                    <li>
+                        <a href="#certificate">Certifications</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertxt">
+                <p>MCA Student</p>
+                <h1>Hi ! I'm <span>Tanu</span> Sharma <br> from india</h1>
+            </div>
+        </div>
+    </div>
+    <!-------- ------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/lap.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempore quidem deserunt officiis reiciendis vero mollitia
+                        facere ad, fuga libero quis sunt eum iste distinctio hic
+                        dolorum possimus qui ullam in?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Aceivement')">Aceivement</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML,CSS,Javascript</li>
+                            <li><span>Programming Language</span><br>C<br>JAVA<br>Python<br>DSA<br>MySQL</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Aceivement">
+                        <ul>
+                            <li><span>14-May-2024 to 15-May-2024</span></li>
+                            <li>Hackindia2024 (Hackathon)</li>
+                            <li>Team Name : Bit2Byte++ </li>
+                            <li>Project : Criminal Detector</li>
+                            <li>Technology Used: Python</li>
+                            <li>Libraries : Numpy , Dlib , Face_recognition , Winsound , Cv2</li>
+                            <li>Rank : 3rd </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Pursuing </span><br>Masters of Computer Application
+                                from ABES Engineering College</li>
+                            <li><span>2020-2023</span><br>Bachelor of Computer Application
+                                from Aligarh College of Engineering College</li>
+                            <li><span>2020</span><br>12th from UP board </li>
+                            <li><span>2018</span><br>10th from UP board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------My projects------------- -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fas fa-calculator fa-1x"></i><br>
+                <h2>Calculator</h2>
+                <p> A Soft Simple calculator built with HTML, CSS, and JavaScript.
+                     Dive into the code and discover the simplicity behind the calculations.</p><br>
+                     <a href="https://github.com/tanusharma72/Calculator" ><button type="button" class="btn">Code</button></a>&nbsp; &nbsp;
+                     <a href="https://simplecalculator72.netlify.app/" ><button type="button" class="btn">Demo</button></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+                <h2>Criminal Detector</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Blanditiis nisi, consequatur accusantium quia quidem 
+                     quae perspiciatis</p><br>
+                     <a href="https://github.com/tanusharma72/Criminal-Face_Detection"><button type="button" class="btn">Code</button></a>&nbsp; &nbsp;
+                     <button type="button" class="btn">Demo</button>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud fa-1x"></i>
+                <h2>Text Formatter</h2>
+                <p>Tansform your text with ease ! Our Text Formatter tool allow you to style your text Dynamically
+                    Using various options for Capitalize,uppercase, lowercase and more. Built with Html ,CSS, Javascript.
+                </p><br>
+                     <a href="https://github.com/tanusharma72/Text-formatter"><button type="button" class="btn">Code</button></a>&nbsp; &nbsp;
+                     <a href="https://dynamictextformatter.netlify.app/"><button type="button" class="btn">Demo</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------portfolio--------------->
+<div id="certificate">
+    <div class="container">
+        <h1 class="sub-title">My certification</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/python.png">
+                <div class="layer">
+                    <h3>PYTHON(Basic)</h3>
+                    <p> This recognition reflects my skills and dedication to continuous learning in Python programming language. Excited to apply these skills in solving real-world challenges."</p>
+                    <a href="https://www.hackerrank.com/certificates/63e97ad050ba"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sql.png">
+                <div class="layer">
+                    <h3>SQL(Basic)</h3>
+                    <p>This recognition reflects my skills and dedication to continuous learning in SQL(Structured Query Language). Excited to apply these skills in solving real-world challenges."</p>
+                    <a href="https://www.hackerrank.com/certificates/0466c20eb9ba"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/java.png">
+                <div class="layer">
+                    <h3>JAVA(Basic)</h3>
+                    <p>This recognition reflects my skills and dedication to continuous learning in JAVA Programming Language. Excited to apply these skills in solving real-world challenges."</p>
+                    <a href="https://www.hackerrank.com/certificates/9f4657bf2fe8"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="button">See more</a> -->
+    </div>
+</div>
+<!-- -------contactme---------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"> </i> stanu7505@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 7248302056</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tanu_sharma7505?igsh=N2docjlqNjR2MHVm"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=7248302056&text=Hello+name+tanu+sharma&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://x.com/tanu_sharm7505?t=pVpL4A_YOqifIi6WTjzJ4A&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/tanu-sharma-040b2a246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="button button2">Download CV <i class="fa-solid fa-download"></i></a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <input type="subject" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2" id="sendmail">send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
